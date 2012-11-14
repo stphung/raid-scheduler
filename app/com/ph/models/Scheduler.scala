@@ -24,6 +24,6 @@ object Scheduler {
     println("== Bench ==")
     println(bench.mkString(","))
     println("== Raid ==")
-    Schedule("Upcoming", targetNext ++ bench, targetNext.map(_.name))
+    Schedule("next", targetNext ++ bench, targetNext.map(_.name))
   }
 }

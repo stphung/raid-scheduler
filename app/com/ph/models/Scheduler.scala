@@ -21,9 +21,6 @@ object Scheduler {
     val bench = players.filterNot(target.contains)
     val targetNext = target.map(c => Player(c.name, c.role, c.score + 2.0))
 
-    println("== Bench ==")
-    println(bench.mkString(","))
-    println("== Raid ==")
-    Schedule("next", targetNext ++ bench, targetNext.map(_.name))
+    Schedule("next (11.29-30.2012)", targetNext ++ bench, targetNext.map(_.name))
   }
 }
